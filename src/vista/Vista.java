@@ -40,12 +40,17 @@ public class Vista extends javax.swing.JFrame {
         titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         titulo.setText("Cuenta de acciones");
 
-        btnCuentaClick.setText("jButton1");
+        btnCuentaClick.setText("Hazme click");
+        btnCuentaClick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCuentaClickActionPerformed(evt);
+            }
+        });
 
         etiquetaCuentaClick.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiquetaCuentaClick.setText("Veces que se hace click el botón: 0");
 
-        btnCursorEntra.setText("jButton2");
+        btnCursorEntra.setText("Pásame encima");
         btnCursorEntra.setEnabled(false);
         btnCursorEntra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,7 +61,7 @@ public class Vista extends javax.swing.JFrame {
         etiquetaCursorEntra.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiquetaCursorEntra.setText("Veces que el cursor entra en el botón: 0");
 
-        btnCursorSale.setText("jButton3");
+        btnCursorSale.setText("Pásame encima");
         btnCursorSale.setEnabled(false);
 
         etiquetaCursorSale.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -109,6 +114,10 @@ public class Vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCursorEntraActionPerformed
 
+    private void btnCuentaClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuentaClickActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCuentaClickActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -145,12 +154,12 @@ public class Vista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCuentaClick;
-    private javax.swing.JButton btnCursorEntra;
-    private javax.swing.JButton btnCursorSale;
-    private javax.swing.JLabel etiquetaCuentaClick;
-    private javax.swing.JLabel etiquetaCursorEntra;
-    private javax.swing.JLabel etiquetaCursorSale;
-    private javax.swing.JLabel titulo;
+    public javax.swing.JButton btnCuentaClick;
+    public javax.swing.JButton btnCursorEntra;
+    public javax.swing.JButton btnCursorSale;
+    public javax.swing.JLabel etiquetaCuentaClick;
+    public javax.swing.JLabel etiquetaCursorEntra;
+    public javax.swing.JLabel etiquetaCursorSale;
+    public javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 }
