@@ -24,15 +24,6 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="titulo" alignment="1" max="32767" attributes="0"/>
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-              <Component id="etiquetaCuentaClick" min="-2" pref="244" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="etiquetaCursorEntra" min="-2" pref="244" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Component id="etiquetaCursorSale" min="-2" pref="244" max="-2" attributes="0"/>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
               <Component id="btnCuentaClick" min="-2" pref="127" max="-2" attributes="0"/>
@@ -41,6 +32,27 @@
               <EmptySpace max="32767" attributes="0"/>
               <Component id="btnCursorSale" min="-2" pref="125" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="etiquetaCuentaClick" min="-2" pref="244" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="etiquetaCursorEntra" min="-2" pref="244" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="etiquetaCursorSale" min="-2" pref="244" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
+                      <Component id="separador" min="-2" pref="714" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="360" max="-2" attributes="0"/>
+                      <Component id="btnResetearCuentas" min="-2" pref="175" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="47" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -61,7 +73,11 @@
                   <Component id="etiquetaCursorEntra" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="etiquetaCursorSale" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="258" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+              <Component id="separador" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Component id="btnResetearCuentas" min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace pref="97" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -134,6 +150,19 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Veces que el cursor sale del bot&#xf3;n: 0"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnResetearCuentas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Resetear cuentas"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="separador">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>

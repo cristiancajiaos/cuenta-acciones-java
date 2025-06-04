@@ -51,4 +51,10 @@ public class Modulo {
         return getCuentaBotonSale();
     }
     
+    public void resetearCuentas() {
+        this.setCuentaBotonClick(0);
+        this.setCuentaBotonEntra(0);
+        this.setCuentaBotonSale(0);
+    }
+    
 }

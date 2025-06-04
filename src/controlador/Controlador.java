@@ -18,13 +18,20 @@ public class Controlador implements ActionListener, MouseListener {
         this.vista.btnCuentaClick.addActionListener(this);
         this.vista.btnCursorEntra.addMouseListener(this);
         this.vista.btnCursorSale.addMouseListener(this);
+        this.vista.btnResetearCuentas.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.vista.btnCuentaClick) {
             this.vista.etiquetaCuentaClick.setText("Veces que se hace click el botón: " + this.modulo.aumentaCuentaBotonClick());
+        } else if (e.getSource() == this.vista.btnResetearCuentas) {
+            this.modulo.resetearCuentas();
+            this.vista.etiquetaCuentaClick.setText("Veces que se hace click el botón: " + this.modulo.getCuentaBotonClick());
+            this.vista.etiquetaCursorEntra.setText("Veces que el cursor entra en el botón: " + this.modulo.getCuentaBotonEntra());
+            this.vista.etiquetaCursorSale.setText("Veces que el cursor sale del botón: " + this.modulo.getCuentaBotonSale());
         }
+        this.toggleBtnResetarCuentas();
     }
 
     @Override
@@ -32,6 +39,7 @@ public class Controlador implements ActionListener, MouseListener {
         if (e.getSource() == this.vista.btnCursorEntra) {
             this.vista.etiquetaCursorEntra.setText("Veces que el cursor entra en el botón: " + this.modulo.aumentaCuentaBotonEntra());
         }
+        this.toggleBtnResetarCuentas();
     }
 
     @Override
@@ -39,6 +47,14 @@ public class Controlador implements ActionListener, MouseListener {
         if (e.getSource() == this.vista.btnCursorSale) {
             this.vista.etiquetaCursorSale.setText("Veces que el cursor sale del botón: " + this.modulo.aumentaCuentaBotonSale());
         }
+        this.toggleBtnResetarCuentas();
+    }
+    
+    public void toggleBtnResetarCuentas() {
+        int cuentaBtnClick = this.modulo.getCuentaBotonClick();
+        int cuentaBtnEntra = this.modulo.getCuentaBotonEntra();
+        int cuentaBtnSale = this.modulo.getCuentaBotonSale();
+        this.vista.btnResetearCuentas.setEnabled(cuentaBtnClick != 0 || cuentaBtnEntra != 0 || cuentaBtnSale != 0);
     }
 
     @Override

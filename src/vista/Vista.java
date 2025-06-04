@@ -33,6 +33,8 @@ public class Vista extends javax.swing.JFrame {
         etiquetaCursorEntra = new javax.swing.JLabel();
         btnCursorSale = new javax.swing.JButton();
         etiquetaCursorSale = new javax.swing.JLabel();
+        btnResetearCuentas = new javax.swing.JButton();
+        separador = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,19 +69,13 @@ public class Vista extends javax.swing.JFrame {
         etiquetaCursorSale.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiquetaCursorSale.setText("Veces que el cursor sale del botón: 0");
 
+        btnResetearCuentas.setText("Resetear cuentas");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(titulo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(etiquetaCuentaClick, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(etiquetaCursorEntra, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(etiquetaCursorSale, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(108, 108, 108)
                 .addComponent(btnCuentaClick, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -88,6 +84,22 @@ public class Vista extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnCursorSale, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(108, 108, 108))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(etiquetaCuentaClick, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(etiquetaCursorEntra, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(etiquetaCursorSale, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(106, 106, 106)
+                        .addComponent(separador, javax.swing.GroupLayout.PREFERRED_SIZE, 714, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(360, 360, 360)
+                        .addComponent(btnResetearCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -104,7 +116,11 @@ public class Vista extends javax.swing.JFrame {
                     .addComponent(etiquetaCuentaClick)
                     .addComponent(etiquetaCursorEntra)
                     .addComponent(etiquetaCursorSale))
-                .addContainerGap(258, Short.MAX_VALUE))
+                .addGap(60, 60, 60)
+                .addComponent(separador, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+                .addComponent(btnResetearCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         pack();
@@ -157,9 +173,11 @@ public class Vista extends javax.swing.JFrame {
     public javax.swing.JButton btnCuentaClick;
     public javax.swing.JButton btnCursorEntra;
     public javax.swing.JButton btnCursorSale;
+    public javax.swing.JButton btnResetearCuentas;
     public javax.swing.JLabel etiquetaCuentaClick;
     public javax.swing.JLabel etiquetaCursorEntra;
     public javax.swing.JLabel etiquetaCursorSale;
+    public javax.swing.JSeparator separador;
     public javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 }
